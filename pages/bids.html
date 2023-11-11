@@ -1,0 +1,1176 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Servicios de construccion de viviendas" />
+    <meta
+      name="keywords"
+      content="Construcción, herramientas, viviendas, hogar"
+    />
+    <meta name="authors" content="Agustin Esquendefe - Ivan Duarte" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&family=Quicksand&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/scss/styles.css">
+    <link rel="stylesheet"  href="../css/requeriments.css"/>
+    <link rel="stylesheet" href="../css/contactUs.css"/>
+    <link rel="icon" href="/svg/Logo-Flaticon-Sin-Fondo-OriginalBS-NC.svg" />
+    <title>Blackstone NC ® | Construction INC</title>
+  </head>
+  <body>
+    <!--Precarga de sitio-->
+    <div class="preloader">
+      <img
+        src="/svg/Logo-Flaticon-Sin-Fondo-OriginalBS-NC.svg"
+        alt="Logo de precarga"
+      />
+    </div>
+    <!--Header-->
+    <header>
+      <section>
+        <nav
+          class="navbar navbar-expand-xl bg-black p-2 d-flex navbarPropio fw-light"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="/index.html">
+              <img
+                src="/img/Recurso 90BS-NC-Horizontal-Sin-Fondo.png"
+                alt="Logo"
+                height="65"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-xl-auto text-center">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="/pages/carrers/subcontractors.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Subcontractors
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./carrers/online-employment-application.html"
+                        >Employee aplication</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pages/carrers/subcontractor-application.html"
+                        >Subcontractor aplications
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="subcontractor-&-supplier-diversity.html"
+                        >Subcontractor & Supplier Diversity</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pages/carrers/subcontractor-requeriments.html"
+                        >Subcontractor Requeriments</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="#"
+                    >Bids</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/pages/projects.html"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/pages/contact-us.html"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main class="contenedorMain transition-fade-in">
+      <section>
+        <!--Franja-->
+        <article class="w-100 articleContact">
+          <div class="franjaContact">
+            <h5 class="text-start">Bids</h5>
+          </div>
+        </article>
+      </section>
+      <section>
+        <div class="container my-5">
+          <h1 class="display-3">Bids</h1>
+            <p class="text-justify">
+              Para recibir un presupuesto de su proyecto, puede gestionarlo inmediatamente con nuestra calculadora personal de costos.
+              Llene este formulario y acontinuacion ingrese los datos requeridos para el presupuesto.
+            </p>
+            <div id="bids-content"> 
+              <!-- First Form  -->
+              <h3>Ubicación</h3>
+              <form class="row g-3 was-validated" novalidate id="principality-form" action="">
+                <!-- Selected Address -->
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="1234 Main St" required>
+                  <div class="valid-feedback">
+                    Dirección válida
+                  </div>
+                  <div class="invalid-feedback">
+                    Proporcione una dirección válida.
+                  </div>
+                </div>
+                <!-- Selected City -->
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Ciudad válida
+                  </div>
+                  <div class="invalid-feedback">
+                    Proporcione una ciudad válida.
+                  </div>
+                </div>
+                <!-- Selected State -->
+                <div class="col-md-4">
+                  <label for="validationCustom03" class="form-label">Estado</label>
+                  <select id="validationCustom03" class="form-select" required>
+                    <option value="" selected disabled>Seleccionar</option>
+                    <option>AK</option>
+                    <option>AL</option>
+                    <option>AR</option>
+                    <option>AZ</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                    <option>FL</option>
+                    <option>GA</option>
+                    <option>HI</option>
+                    <option>IA</option>
+                    <option>ID</option>
+                    <option>IL</option>
+                    <option>IN</option>
+                    <option>KS</option>
+                    <option>KY</option>
+                    <option>LA</option>
+                    <option>MA</option>
+                    <option>MD</option>
+                    <option>ME</option>
+                    <option>MI</option>
+                    <option>MN</option>
+                    <option>MO</option>
+                    <option>MS</option>
+                    <option>MT</option>
+                    <option>NC</option>
+                    <option>ND</option>
+                    <option>NE</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NM</option>
+                    <option>NV</option>
+                    <option>NY</option>
+                    <option>OH</option>
+                    <option>OK</option>
+                    <option>OR</option>
+                    <option>RI</option>
+                    <option>SC</option>
+                    <option>SD</option>
+                    <option>TN</option>
+                    <option>TX</option>
+                    <option>UT</option>
+                    <option>VA</option>
+                    <option>VT</option>
+                    <option>WA</option>
+                    <option>WI</option>
+                    <option>WV</option>
+                    <option>WY</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Estado válido
+                  </div>
+                  <div class="invalid-feedback">
+                    Seleccione un estado válido.
+                  </div>
+                </div>
+                <!-- Selected ZipCode -->
+                <div class="col-md-2">
+                  <label for="validationCustom04" class="form-label">Código postal</label>
+                  <input type="text" class="form-control" id="validationCustom04" required>
+                  <div class="valid-feedback">
+                    Codigo Postal válido
+                  </div>
+                  <div class="invalid-feedback">
+                    Proporcione un código postal válido.
+                  </div>
+                </div>
+                <!-- Dates Project -->
+                <h3>Datos del proyecto</h3>
+                <!-- Project Name -->
+                <div class="col-md-6">
+                  <label for="validationCustom05" class="form-label">Nombre del proyecto</label>
+                  <input type="text" class="form-control" id="validationCustom05" aria-label="nameproject" required>
+                  <div class="valid-feedback">
+                    Nombre válido
+                  </div>
+                  <div class="invalid-feedback">
+                    Proporcione un nombre válido.
+                  </div>
+                </div>
+                <!-- Type Project -->
+                <div class="col-md-4">
+                  <label for="validationCustom06" class="form-label">Tipo de proyecto</label>
+                  <select id="validationCustom06" class="form-select" required>
+                    <option value="" selected disabled>Seleccionar</option>
+                    <option value="Residential">Residencial</option>
+                    <option value="Company">Compañia</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Proyecto válido
+                  </div>
+                  <div class="invalid-feedback">
+                    Seleccione un proyecto válido.
+                  </div>
+                </div>
+                <!-- Start Date -->
+                <div class="col-md-2">
+                  <label for="validationCustom07" class="form-label">Fecha de inicio</label>
+                  <input type="date" class="form-control" required id="validationCustom07" max="12/31/2025">
+                  <div class="valid-feedback">
+                    Fecha válida
+                  </div>
+                  <div class="invalid-feedback">
+                    Seleccione una fecha válida.
+                  </div>
+                </div>
+                <!-- Conditions -->
+                <div class="col-md-12">
+                  <p class="text-justify">
+                    Los terminos y condiciones de <a href="/index.html"><b>Black Stone NC ®</b></a> 
+                    aclara que los calculos realizados son un aproximado o una estimación del proyecto. 
+                    Los valores reales se pueden conocer cuando se brinden los datos precisos. 
+                    Con gusto cualquier duda o sugerencia puede comunicarse a traves de nuestros medios de comunicacion. 
+                    Estamos felices de poder realizar proyectos juntos.
+                  </p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepto los terminos y condiciones.
+                    </label>
+                  </div>
+                </div>
+                <!-- Send Dates -->
+                <div class="col-md-12 text-center">
+                  <button type="submit" id="submit-first-dates" class="btn btn-primary mb-4" onclick="geocodeLocation()">Comenzar</button>
+                  <!-- <div id="result">El resultado de las coordenadas se mostraran acá: </div> -->
+                </div>
+              </form>
+              
+            </div>
+              <!-- Calculator Black Stone NC Residential -->
+              <div id="project-residential" class="form-floating"> 
+                <!-- Calculadora Blackstone NC Residencial -->
+                <h2 class="my-4">Calculadora Black Stone NC ® - Residencial</h2>
+                  <!-- Datos de la propiedad -->
+                  <h4 class="my-4">Datos de la propiedad</h4>
+                  <p class="text-justify my-4">
+                    Los valores que ingrese tienen que ser precisos y en caso de que no quiera
+                    contar o la propiedad no va a contar con alguna de las especificaciones que
+                    solicitamos coloque el valor 0. Los valores deben ser en pie cuadrado. "SQ"
+                  </p>
+                  <br>
+                  <form class="row g-3 formulario_residential" id="formulario_residential" novalidate>
+                    <!-- Finished Basament -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom08" class="form-label">Finished Basament</label>
+                      <input type="number" class="form-control" id="validationCustom08" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida de hasta 5 dígitos.
+                      </div>
+                    </div>
+                    <!-- Unifinished Basament -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom09" class="form-label">Unifinished Basament</label>
+                      <input type="number" class="form-control" id="validationCustom09" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Garage -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom10" class="form-label">Garage</label>
+                      <input type="number" class="form-control" id="validationCustom10" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- First Floor -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom11" class="form-label">First Floor</label>
+                      <input type="number" class="form-control" id="validationCustom11" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Second Floor -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom12" class="form-label">Second Floor</label>
+                      <input type="number" class="form-control" id="validationCustom12" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Third Floor -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom13" class="form-label">Third Floor</label>
+                      <input type="number" class="form-control" id="validationCustom13" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Grupo: Front Porch -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom14" class="form-label">Front Porch</label>
+                      <input type="number" class="form-control" id="validationCustom14" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Rear Porch -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom15" class="form-label">Rear Porch</label>
+                      <input type="number" class="form-control" id="validationCustom15" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Third Garage -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom16" class="form-label">Third Garage</label>
+                      <input type="number" class="form-control" id="validationCustom16" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Grupo: Bonus Room -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom17" class="form-label">Bonus Room</label>
+                      <input type="number" class="form-control" id="validationCustom17" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Carpet Stairs -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom18" class="form-label">Carpet Stairs</label>
+                      <input type="number" class="form-control" id="validationCustom18" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Oak Stairs -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom19" class="form-label">Oak Stairs</label>
+                      <input type="number" class="form-control" id="validationCustom19" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- TJI Joist -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom20" class="form-label">TJI Joist</label>
+                      <input type="number" class="form-control" id="validationCustom20" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Floor Trusses -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom21" class="form-label">Floor Trusses</label>
+                      <input type="number" class="form-control" id="validationCustom21" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- Roof Trusses -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom22" class="form-label">Roof Trusses</label>
+                      <input type="number" class="form-control" id="validationCustom22" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                      <div class="invalid-feedback">
+                        Proporcione una numeración válida.
+                      </div>
+                    </div>
+                    <!-- CheckBox Logistics -->
+                    <div class="col-sm-12 my-5">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="invalidCheckResidential">
+                        <label class="form-check-label" for="invalidCheck">
+                          <b>Requiere de los servicios de logistica ofrecidas por Black Stone NC Construction INC</b>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <label for="validationCustom38" class="form-label">Email <span>*</span></label>
+                      <input type="email" class="form-control" id="validationCustom38" placeholder="example@email.com" required>
+                      <p class="my-3">Coloque un email válido para recibir el presupuesto</p>
+                      <div class="invalid-feedback">
+                        Proporcione un correo válido.
+                      </div>
+                    </div>
+                    <!-- Send Dates For Residential -->
+                    <div class="datos-precisos">
+                      <div class="datos-propiedad">
+                        <div class="col-12 text-center formulario__grupo formulario__grupo-btn-enviar">
+                          <button type="submit" id="submit-dates-residential" class="btn btn-primary mb-4 formulario__btn" onclick="residentialCalculator()">
+                            Obtener presupuesto
+                          </button>
+                          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                            Valores enviados existosamente
+                          </p>
+                        </div>
+                        <br>
+                      </div>
+                    </div>
+                  </form>
+                  <br>
+                  <!-- Numbers Dates Residential -->
+                  <div class="row" id="send-bids-residential">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+                      <a href="index.html">
+                        <img src="../img/BS-Logotipo-Sin-Fondo-Horizontal-OriginalBS.png" style="width: 350px;" alt="">
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right info">
+                      <p>9058 W Market St. Colfax, NC, 27235</p>
+                      <p>Office (336) 497-5756</p>
+                      <p>b.stone.nc@gmail.com</p>
+                      <p>www.blackstonenc.net</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <h6 class="my-5">
+                        Logistica Black Stone NC Construction INC.® para <b id="name-company"></b>, con direccion en: <b id="direction-company"></b>
+                      </h6>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+                      <h4 class="mb-4">Dates</h4>
+                      <div class="client-dates-left text-left">
+                        <!-- Logistics -->
+                        <p> Logistics </p>
+                        <!-- Finished Basament -->
+                        <p> Finished Basament </p>
+                        <!-- Unifinished Basament -->
+                        <p> Unifinished Basament </p>
+                        <!-- Garage -->
+                        <p> Garage </p>
+                        <!-- SQ FOOT -->
+                        <p> Square Foot 1st Floor </p>
+                        <!-- SQ FOOT 2 -->
+                        <p> Square Foot 2nd Floor </p>
+                        <!-- SQ FOOT 3 -->
+                        <p> Square Foot 3td Floor </p>
+                        <!-- Front Porch -->
+                        <p> Front Porch </p>
+                        <!-- Rear Porch -->
+                        <p> Rear Porch </p>
+                        <!-- Third Garage -->
+                        <p> Third Garage </p>
+                        <!-- Bonus Room -->
+                        <p> Bonus Room </p>
+                        <!-- Carpet Stairs -->
+                        <p> Carpet Stairs </p>
+                        <!-- Oak Stairs -->
+                        <p> Oak Stairs </p>
+                        <!-- TJI Joist -->
+                        <p> TJI Joist </p>
+                        <!-- Floor Trusses -->
+                        <p> Floor Trusses </p>
+                        <!-- Roof Trusses -->
+                        <p> Roof Trusses </p>
+                        <!-- Total -->
+                        <h3>
+                          <b>Total</b>
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                      <h4 class="mb-4">Cotización</h4>
+                      <div class="client-dates-right text-right mb-4">
+                        <!-- Opcion Logistica -->
+                        <p>
+                          US&dollar;
+                          <span id="logistic-residential">
+                          </span>
+                        </p>
+                        <!-- Opcion Finished Basament -->
+                        <p>
+                          US&dollar;
+                          <span id="finished-basament">
+                          </span>
+                        </p>
+                        <!-- Opcion Unifinished Basament -->
+                        <p>
+                          US&dollar;
+                          <span id="unifinished-basament">
+                          </span>
+                        </p>
+                        <!-- Opcion Garage -->
+                        <p>
+                          US&dollar;
+                          <span id="garage">
+                          </span>
+                        </p>
+                        <!-- Opcion SQ FOOT -->
+                        <p>
+                          US&dollar;
+                          <span id="sq-foot-1">
+                          </span>
+                        </p>                      
+                        <!-- Opcion SQ FOOT 2 -->
+                        <p>
+                          US&dollar;
+                          <span id="sq-foot-2">
+                          </span>
+                        </p>
+                        <!-- Opcion SQ FOOT 3 -->
+                        <p>
+                          US&dollar;
+                          <span id="sq-foot-3">
+                          </span>
+                        </p>
+                        <!-- Opcion Front Porch -->
+                        <p>
+                          US&dollar;
+                          <span id="front-porch">
+                          </span>
+                        </p>
+                        <!-- Opcion Rear Porch -->
+                        <p>
+                          US&dollar;
+                          <span id="rear-porch">
+                          </span>
+                        </p>
+                        <!-- Opcion Third Garage -->
+                        <p>
+                          US&dollar;
+                          <span id="third-garage">
+                          </span>
+                        </p>
+                        <!-- Opcion Bonus Room -->
+                        <p>
+                          US&dollar;
+                          <span id="bonus-room">
+                          </span>
+                        </p>
+                        <!-- Opcion Carpet Stairs -->
+                        <p>
+                          US&dollar;
+                          <span id="carpet-stairs"></span>
+                        </p>
+                        <!-- Opcion Oak Stairs -->
+                        <p>
+                          US&dollar;
+                          <span id="oak-stairs">
+                          </span>
+                        </p>
+                        <!-- Opcion TJI Joist -->
+                        <p>
+                          US&dollar;
+                          <span id="tji-joist">
+                          </span>
+                        </p>
+                        <!-- Opcion Floor Trusses -->
+                        <p>
+                          US&dollar;
+                          <span id="floor-trusses">  
+                          </span>
+                        </p>
+                        <!-- Opcion Roof Trusses -->
+                        <p>
+                          US&dollar;
+                          <span id="roof-trusses">
+                          </span>
+                        </p>
+                        <!-- Total -->
+                        <h3>
+                          <b>US&dollar;</b>
+                          <span id="residential-total"></span>
+                        </h3>      
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <p>Estamos encantados de realizar este proyecto contigo</p>
+                      <p>Le recordamos que este presupuesto es un estimado, para tener un presupuesto real comuniquese con nosotros a través de los medios de comunicación que se encuentran en el titulo de este PDF.</p>
+                      <p class="text-center">Black Stone NC Construction INC ®</p>
+                    </div>
+                  </div>
+              </div>
+    
+              <!-- Calculadora Blackstone NC Company -->
+              <div id="project-company" class="form-floating">
+                  <h2 class="my-4">Calculadora Black Stone NC ® - Company</h2>
+                    <h4 class="my-4">Datos de la propiedad</h4>
+                      <p class="text-justify my-4">
+                        Los valores que ingrese tienen que ser precisos y en caso de que no quiera
+                        contar o la propiedad no va a contar con alguna de las especificaciones que
+                        solicitamos coloque el valor 0. Los valores deben ser en pie cuadrado. "SQ"
+                      </p>
+                      <br>
+                      <form class="row g-3 formulario_company" id="formulario_company" novalidate>
+                        <!-- Grupo: First Floor -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom23" class="form-label">First Floor</label>
+                          <input type="number" class="form-control" id="validationCustom23" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Second Floor -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom24" class="form-label">Second Floor</label>
+                          <input type="number" class="form-control" id="validationCustom24" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Third Floor -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom25" class="form-label">Third Floor</label>
+                          <input type="number" class="form-control" id="validationCustom25" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Four Floor -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom26" class="form-label">Four Floor</label>
+                          <input type="number" class="form-control" id="validationCustom26" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Garage -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom27" class="form-label">Garage</label>
+                          <input type="number" class="form-control" id="validationCustom27" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Front Porch -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom28" class="form-label">Front Porch</label>
+                          <input type="number" class="form-control" id="validationCustom28" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Extra Garage -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom29" class="form-label">Extra Garage</label>
+                          <input type="number" class="form-control" id="validationCustom29" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Club House -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom30" class="form-label">Club House</label>
+                          <input type="number" class="form-control" id="validationCustom30" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Pool House -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom31" class="form-label">Pool House</label>
+                          <input type="number" class="form-control" id="validationCustom31" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Maintenance Building -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom32" class="form-label">Maintenance Building</label>
+                          <input type="number" class="form-control" id="validationCustom32" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Pavillion -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom33" class="form-label">Pavilion</label>
+                          <input type="number" class="form-control" id="validationCustom33" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Dog Run Pavillion -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom34" class="form-label">Dog Run Pavilion</label>
+                          <input type="number" class="form-control" id="validationCustom34" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Smoking Pavillion -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom35" class="form-label">Smoking Pavilion</label>
+                          <input type="number" class="form-control" id="validationCustom35" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Trash Compactor -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom36" class="form-label">Trash Compactor</label>
+                          <input type="number" class="form-control" id="validationCustom36" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- Grupo: Kayak Pavilion -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom37" class="form-label">Kayak Pavilion</label>
+                          <input type="number" class="form-control" id="validationCustom37" placeholder="12345" min="0" max="99999" oninput="validarNumero(this)">
+                          <div class="invalid-feedback">
+                            Proporcione una numeración válida de hasta 5 dígitos.
+                          </div>
+                        </div>
+                        <!-- CheckBox Logistics -->
+                        <div class="col-md-12 my-5">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="invalidCheckCompany">
+                            <label class="form-check-label" for="invalidCheck">
+                              <b>Requiere de los servicios de logistica ofrecidas por Black Stone NC Construction INC</b>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <label for="validationCustom38" class="form-label">Email <span>*</span></label>
+                          <input type="email" class="form-control" id="validationCustom39" placeholder="example@email.com" required>
+                          <p class="my-3">Coloque un email válido para recibir el presupuesto</p>
+                          <div class="invalid-feedback">
+                            Proporcione un correo válido.
+                          </div>
+                        </div>
+                        <div class="datos-precisos">
+                          <div class="datos-propiedad">
+                            <div class="col-12 text-center formulario__grupo formulario__grupo-btn-enviar">
+                              <a href="mailto:">
+                                <button type="submit" id="submit-dates-company" class="btn btn-primary mb-4 formulario__btn" onclick="companyCalculator()">
+                                  Obtener presupuesto
+                                </button>
+                              </a>
+                              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                                Valores enviados existosamente
+                              </p>
+                            </div>
+                            <br>
+                          </div>
+                        </div>
+                      </form>
+                      <br>
+                    <!-- Numbers Dates Company -->
+                    <div class="row" id="send-bids-company">
+                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+                        <a href="index.html">
+                          <img src="../img/BS-Logotipo-Sin-Fondo-Horizontal-OriginalBS.png" style="width: 350px;" alt="">
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right info">
+                        <p>9058 W Market St. Colfax, NC, 27235</p>
+                        <p>Office (336) 497-5756</p>
+                        <p>b.stone.nc@gmail.com</p>
+                        <p>www.blackstonenc.net</p>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h6 class="my-5">
+                          Logistica Black Stone NC Construction INC.® para <b id="name-company"></b>, con direccion en: <b id="direction-company"></b>
+                        </h6>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+                        <h4 class="mb-4">Datos</h4>
+                        <div class="client-dates-left text-left">
+                          <!-- Opcion Logistica -->
+                          <p>
+                            Logistics
+                          </p>
+                          <!-- Opcion SQ FOOT -->
+                          <p>
+                            First Floor
+                          </p>
+                          <!-- Opcion SQ FOOT 2 -->
+                          <p>
+                            Second Floor
+                          </p>
+                          <!-- Opcion SQ FOOT 3 -->
+                          <p>
+                            Third Floor
+                          </p>
+                          <!-- Opcion SQ FOOT 4 -->
+                          <p>
+                            Four Floor
+                          </p>
+                          <!-- Opcion Garage -->
+                          <p>
+                            Garage
+                          </p>
+                          <!-- Opcion Front Porch -->
+                          <p>
+                            Front Porch
+                          </p>
+                          <!-- Opcion Extra Garage -->
+                          <p>
+                            Extra Garage
+                          </p>
+                          <!-- Opcion Club House -->
+                          <p>
+                            Club House
+                          </p>
+                          <!-- Opcion Pool House -->
+                          <p>
+                            Pool House
+                          </p>
+                          <!-- Opcion Maintenance Building -->
+                          <p>
+                            Maintenance Building
+                          </p>
+                          <!-- Opcion Pavilion -->
+                          <p>
+                            Pavillion
+                          </p>
+                          <!-- Opcion Dog Run Pavilion -->
+                          <p>
+                            Dog Run Pavilion
+                          </p>
+                          <!-- Opcion Smoking Pavilion -->
+                          <p>
+                            Smoking Pavilion
+                          </p>
+                          <!-- Opcion Trash Compactor -->
+                          <p>
+                            Trash Compactor
+                          </p>
+                          <!-- Opcion Kayak Pavilion -->
+                          <p>
+                            Kayak Pavilion
+                          </p>
+                          <!-- Total -->
+                          <h3>
+                            <b>Total</b>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                        <h4 class="mb-4">Cotizacion</h4>
+                          <div class="client-dates-right text-right mb-4">  
+                          <!-- Opcion Logistica -->
+                          <p>
+                            US&dollar;
+                            <span id="logistics-company">  
+                            </span> 
+                          </p>
+                          <!-- Opcion SQ FOOT -->
+                          <p>
+                            US&dollar;
+                          <span id="first-floor-company">
+                          </span>
+                          </p>
+                          <!-- Opcion SQ FOOT 2 -->
+                          <p>
+                            US&dollar;
+                            <span id="second-floor-company">
+                            </span>
+                          </p>
+                          <!-- Opcion SQ FOOT 3 -->
+                          <p>
+                            US&dollar;
+                            <span id="third-floor-company">
+                            </span>
+                          </p>
+                          <!-- Opcion SQ FOOT 4 -->
+                          <p>
+                            US&dollar;
+                            <span id="four-floor-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Garage -->
+                          <p>
+                            US&dollar;
+                            <span id="garage-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Front Porch -->
+                          <p>
+                            US&dollar;
+                            <span id="frontporch-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Extra Garage -->
+                          <p>
+                            US&dollar;
+                            <span id="extragarage-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Club House -->
+                          <p>
+                            US&dollar;
+                            <span id="clubhouse-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Pool House -->
+                          <p>
+                            US&dollar;
+                            <span id="poolhouse-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Maintenance Building -->
+                          <p>
+                            US&dollar;
+                            <span id="maintenancebuilding-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Pavilion -->
+                          <p>
+                            US&dollar;
+                            <span id="pavilion-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Dog Run Pavilion -->
+                          <p>
+                            US&dollar;
+                            <span id="dogrunpavilion-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Smoking Pavilion -->
+                          <p>
+                            US&dollar;
+                            <span id="smokingpavilion-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Trash Compactor -->
+                          <p>
+                            US&dollar;
+                            <span id="trashcompactor-company">
+                            </span>
+                          </p>
+                          <!-- Opcion Kayak Pavilion -->
+                          <p>
+                            US&dollar;
+                            <span id="kayakpavilion-company" >
+                            </span>
+                          </p>
+                          <!-- Total -->
+                          <h3>
+                            <b>US&dollar;</b>
+                            <span id="company-total"></span>
+                          </h3> 
+                          </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p>Estamos encantados de realizar este proyecto contigo</p>
+                        <p>Le recordamos que este presupuesto es un estimado, para tener un presupuesto real comuniquese con nosotros a través de los medios de comunicación que se encuentran en el titulo de este PDF.</p>
+                        <p class="text-center">Black Stone NC Construction INC ®</p>
+                      </div>
+                    </div>
+                </div>
+      </section>
+      <!--Estamos contratando-->
+      <section>
+        <div class="container mt-3 contenidoPestanas">
+          <h3 class="text-center">¡Estamos contratando!</h3>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-center align-items-lg-baseline text-center contenedorTecnicos"
+          >
+            <div>
+              <h5 class="text-center text-lg-start buscamosTecnicos">
+                Buscamos tencicos para intregrarse a nuestra oficina
+              </h5>
+              <p>
+                ¡Si tienes perfil técnico y quieres formar parte de la empresa
+                de referencia en el sector de la construccion con madera
+                envíanos tu currículum!
+              </p>
+            </div>
+            <a
+              href="mailto:b.stone.nc@gmail.com?subject=Candidatura%20Tecnico%20Blackstone%20NC"
+              target="_blank"
+              ><button
+                type="button"
+                class="btn btn-outline-danger p-lg-2 ms-lg-5 mt-lg-5 botonContacto"
+              >
+                ¡Contactanos!
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black d-flex mt-3">
+      <div class="container-fluid my-4">
+        <div class="row">
+          <div
+            class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="/img/Recurso 90BS-NC-Horizontal-Sin-Fondo.png"
+              alt="logo"
+              height="65"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-12 text-white my-3 text-center">
+            <p class="fw-semibold">
+              Blackstone NC Construction INC. ® | 058 W Market Street. Colfax,
+              NC 27235 | Office (336) 497-5756
+            </p>
+            <p class="linksFooter">
+              |<a href="../index.html">Home</a>|<a
+                href="#"
+                >Projects</a
+              >|<a href="./avisoLegal.html" target="_blank">Aviso legal</a>|<a href="./contact-us.html"
+                >ContactUs</a
+              >|
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-sm-12 d-flex justify-content-center align-items-center"
+          >
+            <a href="https://www.facebook.com/blackstonenc/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-facebook text-white mx-3"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/blackstonenc/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-instagram text-white mx-3"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+            <a href="b.stone.nc@gmail.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-envelope-at-fill text-white mx-3"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"
+                />
+                <path
+                  d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=13363914907&text=Hola,%20necesito%20m%C3%A1s%20infomaci%C3%B3n!"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-whatsapp text-white mx-3"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+   <!-- Firebase -->
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+   <script src="./js/index.js"></script>
+    <!-- Scripts Propios -->
+    <script src="../js/aparicionSuave.js"></script>
+    <script src="/js/precarga.js"></script>
+    <script src="/js/index/navbarFixed.js"></script>
+    <!--Bids-->
+    <script src="../js/bids-otros/validation-inputs.js"></script>
+    <script src="../js/bids-otros/bids-calculator-residential.js"></script>
+    <script src="../js/bids-otros/bids-calculator-company.js"></script>
+    <script src="../js/bids-otros/bids-validacion-company.js"></script>
+    <script src="../js/bids-otros/bids-validacion-residential.js"></script>
+    <script src="../js/bids-otros/bids-validacion-dates-client.js"></script>
+    <script src="../js/bids-otros/needs-validate.js"></script>
+    <script src="../js/bids-otros/logistics.js" ></script>  
+   </body>
+</html>
