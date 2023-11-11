@@ -1,0 +1,142 @@
+.listaTexto {
+  text-align: justify;
+}
+
+.listaTexto a {
+  text-decoration: none;
+  color: #da1212;
+}
+
+.sampleForms a {
+  text-decoration: none;
+  color: #da1212;
+}
+
+.sampleForms a:hover {
+  color: black;
+}
+
+.transition-fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+/*Diversity*/
+
+/*LegalWarining*/
+
+.infoGeneral a {
+  text-decoration: none;
+  color: white;
+}
+
+.avisosLegales a {
+  text-decoration: none;
+  color: #da1212;
+}
+
+.avisosLegales {
+  text-align: justify;
+}
+
+/*Projects*/
+
+.contenidoProjects a {
+  text-decoration: none;
+  color: #da1212;
+  font-size: 30px;
+}
+
+.contenidoProjects a:hover {
+  color: black;
+}
+
+.containerVirginia inframe {
+  border: solid;
+  color: #da1212;
+  border-width: 2px;
+}
+
+.dropdownProjects ul {
+  background-color: #da1212 !important;
+}
+
+/*Project virginia */
+
+.scrollable-container {
+  white-space: nowrap; /* Evita el retorno de línea */
+  overflow-x: auto; /* Agrega la barra de desplazamiento horizontal */
+  display: flex; /* Hace que los elementos hijos se muestren en una fila */
+}
+
+.scrollable-container img {
+  max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+  margin-right: 10px; /* Añade un espacio entre las imágenes (puedes ajustar según sea necesario) */
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .imgPrincipalProjectos {
+    height: 500px;
+  }
+
+  #horizontal-Scroll img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imgPrincipalProjectos {
+    height: 700px;
+  }
+
+  #horizontal-Scroll img {
+    height: 300px;
+  }
+}
+
+.listaTexto {
+    text-align: justify;
+
+}
+
+.listaTexto a {
+    text-decoration: none;
+    color: #da1212;
+}
+
+.sampleForms a{
+    text-decoration: none;
+    color: #da1212;
+}
+
+.sampleForms a:hover {
+    color: black;
+}
+
+.transition-fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+
+
+  /*Diversity*/
+
+
+  /*LegalWarining*/
+
+  .infoGeneral a{
+    text-decoration: none;
+    color: white;
+
+  }
+
+  .avisosLegales a {
+    text-decoration: none;
+    color: #da1212;
+  }
+
+  .avisosLegales {
+    text-align: justify;
+  }

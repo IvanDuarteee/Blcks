@@ -1,0 +1,120 @@
+
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/*Mapa*/
+
+.mapaContact {
+  height: 450px;
+}
+
+
+.articleContact {
+   background:  linear-gradient(90deg,#da1212 0,#f26060 50%,#da1212);
+}
+.franjaContact {
+
+    padding: 20px;
+
+}
+
+.franjaContact h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+
+.contenedorMain {
+    width: 100%;
+    margin-top: 91px;
+  }
+
+/*Formulario y contacto*/
+
+.tituloFormContact {
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: da1212;
+
+}
+
+.botonForm button {
+  width: 25%;
+}
+ 
+/*Iconos*/
+
+.listaIconos a {
+  text-decoration: none;
+  color: black;
+}
+
+.listaIconos a:hover {
+  color: #da1212;
+}
+
+
+
+
+
+
+@media (max-width: 767px){
+
+    .contenedorMain {
+        margin-top: 66px;
+    }
+    
+    .franjaContact {
+    padding: 15px;
+    }
+
+    .contenedorContactos {
+      margin-bottom: 40px;
+      width: 100% !important;
+    }
+
+    .contenedorImput {
+
+      width: 100% !important;
+      
+    }
+
+    #contactForm input {
+      padding: 11px;
+      margin-bottom: 10px;
+    }
+
+    .botonForm {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .botonForm button {
+      width: 40%;
+    }
+
+
+}  
+@media (width:768px)  {
+  main {
+    margin-top: 66px !important;
+  }
+
+}
+
+
+@media (min-width: 991px) {
+  .mapaContact {
+    height: 500px;
+  }
+ 
+}
+
+@media (min-width: 1920px) {
+
+}

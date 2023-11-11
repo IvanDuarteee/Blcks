@@ -1,0 +1,354 @@
+
+/*Precarga*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* Fondo del preloader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader img {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilo adicional para ocultar el preloader cuando la página está lista */
+.loaded .preloader {
+  display: none;
+}
+
+/*Loader*/
+
+/*Header*/
+/*Background navbar */
+
+.navbarPropio {
+  background-color: #121212;
+}
+
+
+.dropdown-menu {
+  background-color: #121212;
+}
+
+.navbarPropio {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1; /* Opacidad inicial */
+  transition: opacity 0.3s; /* Transición suave de opacidad */
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.8; /* Opacidad inicial */
+  transition: opacity 0.3s; /* Transición suave de opacidad */
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+/*Fuentes de navbar */
+.navbarPropio a {
+  font-family: 'monserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+.dropdown-menu a {
+  font-family: 'monserrat', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+/*Carousel*/
+
+.carousel2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0; /* Establece el ancho completo */
+  bottom: 0; /* Establece la altura completa */
+  z-index: 0;
+}
+
+.carousel2 img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del carousel */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del carousel */
+  object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsionarla */
+  opacity: 0.7;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.carouselBotones button {
+  opacity: 0.2;
+}
+
+.carouselBotones button.active {
+  opacity: 0.8 !important;
+  color: rgb(26, 54, 54);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 58% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #fff; /* Opcional: Cambiar el color del texto */
+}
+
+.textoCarousel h5 {
+  font-size: 70px;
+  font-weight: bolder;
+  text-shadow: 3px 3px 5px #121212; /* Agregar sombra de texto para resaltar */
+  color: #fff; /* Cambiar el color del texto a blanco para que sea legible en el fondo negro */
+}
+
+/*Quienes somos */
+.quienesSomos h2 {
+  text-align: center;
+  border-bottom: solid;
+  border-color: #d04143;
+  color: black;
+  font-weight: bolder;
+  font-family: 'monserrat', sans-serif;
+}
+
+.quienesSomos p {
+  text-align: center;
+  font-size: large;
+  color: black;
+}
+
+.aparecer {
+  opacity: 0; /* Configura la opacidad inicial en 0 (invisible) */
+  animation: aparecer 3.5s ease-out forwards; /* Aplica una animación llamada "aparecer" durante 1 segundo */
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1; /* Cuando la animación se completa, establece la opacidad en 1 (visible) */
+    transform: translateY(0); /* Restablece la posición a su valor original */
+  }
+}
+
+/*Pestañas*/
+#pestanas {
+  font-family: 'monserrat', sans-serif;
+}
+.botonesPestanas button {
+  margin: 4px;
+  font-weight: bolder;
+  color: white;
+  background-color: #da1212;
+}
+
+/* Estilo para los botones de pestaña activos dentro del contenedor .botonesPestanas */
+.botonesPestanas .nav-link.active {
+  background-color: black !important;
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
+.contenidoPestanas {
+  align-items: center;
+}
+
+.contenidoPestanas h3 {
+  font-weight: bolder;
+  border-bottom: solid;
+  border-color: #d04143;
+}
+
+.mapa {
+  border: solid;
+  border-color: #da1212;
+}
+
+/*Acordeon informacion*/
+.accordion-item img {
+  height: 50px !important;
+}
+
+.accordion-button.collapsed {
+  color: white;
+}
+
+.accorHeader h4 {
+  color: white !important;
+}
+
+/*Patrocinadores */
+
+.patrocinadores {
+  background-color: #f1f1f1;
+  font-family: 'monserrat', sans-serif;
+}
+
+.enlacePatrocinador {
+  text-decoration: none !important;
+  color: #121212;
+}
+
+.enlacePatrocinador:hover {
+  color: #da1212;
+}
+
+/*Contratacion*/
+
+.buscamosTecnicos {
+  color: #da1212;
+}
+
+/*Media queries*/
+/*Sm screen*/
+@media (max-width: 405px) {
+  .botonesPestanas button {
+    font-size: 10px !important;
+    padding: 9px !important;
+  }
+}
+
+/*XS-Screen*/
+
+@media (max-width: 768px) {
+  /*NavbarPropio*/
+  .navbarPropio img {
+    height: 40px !important;
+  }
+
+  .navbarPropio a {
+    font-size: 15px;
+  }
+
+  .quienesSomos p {
+    font-size: 15px;
+  }
+
+  /*Carousel responsive*/
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 10% !important;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 58% !important;
+    left: 49% !important;
+    transform: translate(-50%, -50%) !important;
+    color: #fff; /* Opcional: Cambiar el color del texto */
+  }
+
+  .textoCarousel h5 {
+    font-size: 45px !important;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px #121212; /* Agregar sombra de texto para resaltar */
+    color: #fff; /* Cambiar el color del texto a blanco para que sea legible en el fondo negro */
+  }
+
+  /*Sector quienes somos */
+  /*Sector pestañas*/
+  .botonesPestanas button {
+    font-size: 14px;
+    padding: 11px;
+  }
+
+  .contenidoPestanas p {
+    font-size: 15px;
+  }
+
+  .contenidoContrata {
+    text-align: center;
+    align-items: center;
+  }
+
+  .botonContacto {
+    margin-bottom: 15px;
+  }
+
+ 
+}
+
+/*Screen M */
+@media (min-width: 992px) {
+  .carousel2 img {
+    height: 600px;
+  }
+
+  .boxPatrocinadores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+
+  .contenedorTecnicos {
+    margin-top: -20px; 
+  }
+}
+
+/*Screen XL*/
+
+@media (min-width: 1200px) {
+
+  /*Acordeon*/
+  .articlePestanas {
+    width: 50%;
+  }
+  .articleAccordion {
+    width: 50%;
+  }
+
+  .accordionPropio {
+    margin-top: 10px;
+  }
+
+
+}
+
+/* footer */
+#a-li {
+  color: white;
+  
+}
+footer ul {
+  list-style-type: none;
+}
+
+
+footer li:not(:last-child):after {
+  content: "|";
+  margin: 0 5px;
+  color: #ffffff; /* color de la barra */
+}
+
+.linksFooter a{
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight:700;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.linksFooter a:hover{
+  color: #da1212;
+}
+
+.iconosFooter:hover {
+  color: #da1212;
+}
+
+
+.transition-fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
