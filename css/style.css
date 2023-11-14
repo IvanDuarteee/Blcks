@@ -85,41 +85,42 @@
   width: 100%; /* Asegura que la imagen ocupe todo el ancho del carousel */
   height: 100%; /* Asegura que la imagen ocupe todo el alto del carousel */
   object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsionarla */
-  opacity: 0.7;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .carouselBotones button {
-  opacity: 0.2;
 }
 
 .carouselBotones button.active {
-  opacity: 0.8 !important;
   color: rgb(26, 54, 54);
 }
 
-.carousel-caption {
+/*.carousel-caption {
   position: absolute;
   top: 58% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #fff; /* Opcional: Cambiar el color del texto */
+  color: #fff; /* Opcional: Cambiar el color del texto
 }
+  
+  */
 
-.textoCarousel h5 {
+/*.textoCarousel h5 {
   font-size: 70px;
   font-weight: bolder;
-  text-shadow: 3px 3px 5px #121212; /* Agregar sombra de texto para resaltar */
-  color: #fff; /* Cambiar el color del texto a blanco para que sea legible en el fondo negro */
+  text-shadow: 3px 3px 5px #121212; /* Agregar sombra de texto para resaltar 
+  
+  color: #fff; 
 }
-
+  */
+  /* Cambiar el color del texto a blanco para que sea legible en el fondo negro */
 /*Quienes somos */
 .quienesSomos h2 {
-  text-align: center;
+  text-align: start;
   border-bottom: solid;
   border-color: #d04143;
   color: black;
-  font-weight: bolder;
+  font-weight: lighter;
   font-family: 'monserrat', sans-serif;
 }
 
@@ -240,13 +241,16 @@
     top: 10% !important;
   }
 
+  /*
   .carousel-caption {
     position: absolute;
     top: 58% !important;
     left: 49% !important;
     transform: translate(-50%, -50%) !important;
-    color: #fff; /* Opcional: Cambiar el color del texto */
+    color: #fff; /* Opcional: Cambiar el color del texto
+    
   }
+    */
 
   .textoCarousel h5 {
     font-size: 45px !important;
@@ -281,7 +285,8 @@
 /*Screen M */
 @media (min-width: 992px) {
   .carousel2 img {
-    height: 600px;
+    height: 700px;
+    object-fit:fill !important;
   }
 
   .boxPatrocinadores {
@@ -298,6 +303,11 @@
 /*Screen XL*/
 
 @media (min-width: 1200px) {
+
+  .carousel2 img {
+    height: 800px;
+    object-fit:fill !important;
+  }
 
   /*Acordeon*/
   .articlePestanas {
