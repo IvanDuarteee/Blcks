@@ -274,6 +274,8 @@
         id="pestanas"
         class="container d-flex flex-column justify-content-center mt-4"
       >
+      <!--
+
         <div class="card text-center cardAboutUs">
           <div class="card-header">
             <ul
@@ -295,7 +297,7 @@
                   aria-controls="pills-ubicacion"
                   aria-selected="true"
                 >
-                  <a>Where we come from</a>
+                  <a>Ubication</a>
                 </button>
               </li>
               <li class="nav-item" role="presentation">
@@ -309,7 +311,7 @@
                   aria-controls="pills-metodo"
                   aria-selected="false"
                 >
-                  When do we start
+                  Method
                 </button>
               </li>
               <li
@@ -326,7 +328,7 @@
                   aria-controls="pills-eficiencia"
                   aria-selected="false"
                 >
-                  What do we start doing?
+                Efficiency
                 </button>
               </li>
               <li
@@ -343,28 +345,48 @@
                   aria-controls="pills-passivhaus"
                   aria-selected="false"
                 >
-                  What do we do now
+                  Ending
                 </button>
               </li>
-              <li
-                class="nav-item border-bottom border-black"
-                role="presentation"
-              >
-                <button
-                  class="nav-link w-100 fw-bolder text-white"
-                  id="pills-offerServices-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-offerServices"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-offerServices"
-                  aria-selected="true"
+              <!--
+
+                <li
+                  class="nav-item border-bottom border-black"
+                  role="presentation"
                 >
-                  Where we offer services
+                  <button
+                    class="nav-link w-100 fw-bolder text-white"
+                    id="pills-offerServices-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-offerServices"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-offerServices"
+                    aria-selected="true"
+                  >
+                    Where we offer services
+                  </button>
+                </li>
+              </ul>
+            </div>
+          -->
+     
+          <div class="card text-center cardAboutUs">
+            <div class="card-header">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle w-100 bg-danger" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ubication
                 </button>
-              </li>
-            </ul>
+                <div class="dropdown-menu bg-danger w-100 text-bg-danger text-center" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item active" id="pills-ubicacion-tab" data-bs-toggle="pill" data-bs-target="#pills-ubicacion" role="tab" aria-controls="pills-ubicacion" aria-selected="true">Ubication</a>
+                  <a class="dropdown-item" id="pills-metodo-tab" data-bs-toggle="pill" data-bs-target="#pills-metodo" role="tab" aria-controls="pills-metodo" aria-selected="false">Method</a>
+                  <a class="dropdown-item" id="pills-eficiencia-tab" data-bs-toggle="pill" data-bs-target="#pills-eficiencia" role="tab" aria-controls="pills-eficiencia" aria-selected="false">Efficiency</a>
+                  <a class="dropdown-item" id="pills-passivhaus-tab" data-bs-toggle="pill" data-bs-target="#pills-passivhaus" role="tab" aria-controls="pills-passivhaus" aria-selected="false">Ending</a>
+                </div>
+              </div>
+            </div>
           </div>
+          
           <div class="tab-content contenidoPestanas mt-3" id="pills-tabContent">
             <div
               class="tab-pane fade show active text-start descripcionPestanas"
@@ -373,7 +395,7 @@
               aria-labelledby="pills-ubicacion-tab"
               tabindex="0"
             >
-              <h3>Where we come from</h3>
+              <h3>Ubication</h3>
               <iframe
                 class="mapa w-100"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.5089598972672!2d-80.00635488432334!3d36.10545631419566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885303ff44c9e52b%3A0x5b104004b677c5f1!2s9058%20W%20Market%20St%2C%20Colfax%2C%20NC%2027235!5e0!3m2!1ses-419!2sus!4v1673452103511!5m2!1ses-419!2sus"
@@ -396,7 +418,7 @@
               aria-labelledby="pills-metodo-tab"
               tabindex="0"
             >
-              <h3>When do we start</h3>
+              <h3>Method</h3>
               <p>
                 La flexibilidad es la caracteristica principal de nuestro metodo
                 de trabajo. Podemos intervenir en cualquier fase del proceso
@@ -411,7 +433,7 @@
               aria-labelledby="pills-eficiencia-tab"
               tabindex="0"
             >
-              <h3>What do we start doing</h3>
+              <h3>Efficiency</h3>
               <p>
                 Los pilares de nuestra actividad son el conocimiento, la
                 experiencia, la implicacion en cada uno de los proyectos y el
@@ -430,7 +452,7 @@
               aria-labelledby="pills-passivhaus-tab"
               tabindex="0"
             >
-              <h3>What do we do now</h3>
+              <h3>Ending</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
                 saepe similique nemo a et aliquid necessitatibus enim
@@ -438,21 +460,24 @@
                 repellat possimus obcaecati numquam porro? item
               </p>
             </div>
-            <div
-              class="tab-pane fade text-start"
-              id="pills-offerServices"
-              role="tabpanel"
-              aria-labelledby="pills-passivhaus-tab"
-              tabindex="0"
-            >
-              <h3>Offer services</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                saepe similique nemo a et aliquid necessitatibus enim
-                dignissimos ipsum non, vitae explicabo, commodi laboriosam ut
-                repellat possimus obcaecati numquam porro? item
-              </p>
-            </div>
+            <!--
+
+              <div
+                class="tab-pane fade text-start"
+                id="pills-offerServices"
+                role="tabpanel"
+                aria-labelledby="pills-passivhaus-tab"
+                tabindex="0"
+              >
+                <h3>Offer services</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  saepe similique nemo a et aliquid necessitatibus enim
+                  dignissimos ipsum non, vitae explicabo, commodi laboriosam ut
+                  repellat possimus obcaecati numquam porro? item
+                </p>
+              </div>
+            -->
           </div>
         </div>
         <article class="articleAccordion container mt-2">
@@ -689,6 +714,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index/dropdown.js"></script>
     <script src="./js/precarga.js"></script>
     <script src="./js/index/navbarFixed.js"></script>
   </body>
