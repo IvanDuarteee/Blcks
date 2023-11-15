@@ -89,8 +89,8 @@
 }
 
 .carouselBotones button {
-  border-radius: 50%;
-  height: 20px !important;
+  border-radius: 25%;
+  height: 5px !important;
 }
 
 .carouselBotones button.active {
@@ -320,7 +320,7 @@
 @media (min-width: 1200px) {
 
   .carousel2 img {
-    height: 800px;
+    height: 950px;
     object-fit:fill !important;
   }
 
