@@ -257,11 +257,11 @@
             </button>
           </div>
         </div>
-        <article class="quienesSomos my-5">
-          <div class="container aparecer">
-            <div class="row">
-              <h2>About us</h2>
-              <div class="col my-4">
+        <article class="quienesSomos mt-3">
+          <div class="container-fluid aparecer">
+            <div class="container d-flex flex-column flex-md-row justify-content-between col">
+              <div class="col-md-4">
+                <h2>About us</h2>
                 <p>
                   Black stone NC® is a cutting-edge construction company sustainable
                   and energy efficient. Using the material of renewable construction
@@ -269,8 +269,8 @@
                   their quality, aesthetic value and benefits.
                 </p>
               </div>
-              <div class="col my-4">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/glXnZT8DshU?si=t1v4rf2hZlO9gZae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="col-md-7 videoAboutUs">
+                <iframe class="w-100 mt-5" width="" height="450" src="https://www.youtube.com/embed/glXnZT8DshU?si=t1v4rf2hZlO9gZae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -278,290 +278,180 @@
       </section>
       <!--Pestañas-->
       <section
-        id="pestanas"
-        class="container d-flex flex-column justify-content-center mt-4"
-      >
-      <!--
-
-        <div class="card text-center cardAboutUs">
-          <div class="card-header">
-            <ul
-              class="nav nav-pills mb-3 d-flex flex-column"
-              id="pills-tab"
-              role="tablist"
-            >
-              <li
-                class="nav-item border-bottom border-black"
-                role="presentation"
-              >
-                <button
-                  class="nav-link active w-100 text-white fw-bolder"
-                  id="pills-ubicacion-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-ubicacion"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-ubicacion"
-                  aria-selected="true"
-                >
-                  <a>Ubication</a>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link w-100 text-white fw-bolder border-bottom border-black"
-                  id="pills-metodo-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-metodo"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-metodo"
-                  aria-selected="false"
-                >
-                  Method
-                </button>
-              </li>
-              <li
-                class="nav-item border-bottom border-black"
-                role="presentation"
-              >
-                <button
-                  class="nav-link w-100 fw-bolder text-white"
-                  id="pills-eficiencia-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-eficiencia"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-eficiencia"
-                  aria-selected="false"
-                >
-                Efficiency
-                </button>
-              </li>
-              <li
-                class="nav-item border-bottom border-black"
-                role="presentation"
-              >
-                <button
-                  class="nav-link w-100 fw-bolder text-white"
-                  id="pills-passivhaus-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-passivhaus"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-passivhaus"
-                  aria-selected="false"
-                >
-                  Ending
-                </button>
-              </li>
-              <!--
-
-                <li
-                  class="nav-item border-bottom border-black"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link w-100 fw-bolder text-white"
-                    id="pills-offerServices-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-offerServices"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-offerServices"
-                    aria-selected="true"
-                  >
-                    Where we offer services
-                  </button>
-                </li>
-              </ul>
-            </div>
-          -->
-     
-          <div class="card text-center cardAboutUs">
-            <div class="card-header">
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle w-100 bg-danger" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ubicación
-                </button>
-                <div class="dropdown-menu bg-danger w-100 text-bg-danger text-center" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item active" id="pills-ubicacion-tab" data-bs-toggle="pill" data-bs-target="#pills-ubicacion" role="tab" aria-controls="pills-ubicacion" aria-selected="true">Ubicación</a>
-                  <a class="dropdown-item" id="pills-metodo-tab" data-bs-toggle="pill" data-bs-target="#pills-metodo" role="tab" aria-controls="pills-metodo" aria-selected="false">Metodo</a>
-                  <a class="dropdown-item" id="pills-eficiencia-tab" data-bs-toggle="pill" data-bs-target="#pills-eficiencia" role="tab" aria-controls="pills-eficiencia" aria-selected="false">Eficiencia</a>
-                  <a class="dropdown-item" id="pills-passivhaus-tab" data-bs-toggle="pill" data-bs-target="#pills-passivhaus" role="tab" aria-controls="pills-passivhaus" aria-selected="false">Finalización</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tab-content contenidoPestanas mt-3" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active text-start descripcionPestanas"
-              id="pills-ubicacion"
-              role="tabpanel"
-              aria-labelledby="pills-ubicacion-tab"
-              tabindex="0"
-            >
-              <h3>Ubication</h3>
-              <iframe
-                class="mapa w-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.5089598972672!2d-80.00635488432334!3d36.10545631419566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885303ff44c9e52b%3A0x5b104004b677c5f1!2s9058%20W%20Market%20St%2C%20Colfax%2C%20NC%2027235!5e0!3m2!1ses-419!2sus!4v1673452103511!5m2!1ses-419!2sus"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                alt="Mapa de situación"
-              >
-              </iframe>
-              <p class="">
-                Nuestra sede se encuentra en Colfax, Carolina del Norte (EE.UU).
-                Si bien nuestro ambito de trabajo se extiende a todo Carolina
-                del Norte, y al extranjero en actuaciones concretas.
-              </p>
-            </div>
-            <div
-              class="tab-pane fade text-start"
-              id="pills-metodo"
-              role="tabpanel"
-              aria-labelledby="pills-metodo-tab"
-              tabindex="1"
-            >
-              <h3>Method</h3>
-              <p>
-                La flexibilidad es la caracteristica principal de nuestro metodo
-                de trabajo. Podemos intervenir en cualquier fase del proceso
-                constructivo, desde la concepción hasta la ejecución llave en
-                mano, aportando valor añadido en cada una de ellas.
-              </p>
-            </div>
-            <div
-              class="tab-pane fade text-start"
-              id="pills-eficiencia"
-              role="tabpanel"
-              aria-labelledby="pills-eficiencia-tab"
-              tabindex="2"
-            >
-              <h3>Efficiency</h3>
-              <p>
-                Los pilares de nuestra actividad son el conocimiento, la
-                experiencia, la implicacion en cada uno de los proyectos y el
-                compromiso en optimizar la solucion mas adecuada a cada cliente.
-              </p>
-              <p>
-                La eficiencia de nuestros procesos y la experiencia acumulada
-                nos permite controlar plazos y costes para ofrecer fiabilidad
-                total en nuestras actuaciones.
-              </p>
-            </div>
-            <div
-              class="tab-pane fade text-start"
-              id="pills-passivhaus"
-              role="tabpanel"
-              aria-labelledby="pills-passivhaus-tab"
-              tabindex="3"
-            >
-              <h3>Ending</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                saepe similique nemo a et aliquid necessitatibus enim
-                dignissimos ipsum non, vitae explicabo, commodi laboriosam ut
-                repellat possimus obcaecati numquam porro? item
-              </p>
-            </div>
-            <!--
-
-              <div
-                class="tab-pane fade text-start"
-                id="pills-offerServices"
-                role="tabpanel"
-                aria-labelledby="pills-passivhaus-tab"
-                tabindex="0"
-              >
-                <h3>Offer services</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  saepe similique nemo a et aliquid necessitatibus enim
-                  dignissimos ipsum non, vitae explicabo, commodi laboriosam ut
-                  repellat possimus obcaecati numquam porro? item
-                </p>
-              </div>
-            -->
-          </div>
-        </div>
-        <article class="articleAccordion container mt-2">
-          <div
-            class="container accordion accordionPropio"
-            id="accordionPanelsStayOpenExample"
+      id="pestanas"
+      class="container d-flex flex-column justify-content-center mt-4"
+    >
+    <div class="card text-center cardAboutUs">
+      <div class="card-header">
+        <ul
+          class="nav nav-pills mb-3 d-flex flex-column"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li
+            class="nav-item border-bottom border-black"
+            role="presentation"
           >
-            <div class="accordion-item">
-              <h4 class="accordion-header accorHeader">
-                <button
-                  class="accordion-button text-white fw-bolder"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Innovacion
-                </button>
-              </h4>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-              >
-                <div class="accordion-body fw-lighter fs-5 ">
-                  <p>
-                    Nuestros desarrollos de I+D, la formacion continua y la
-                    relacion con las empresas punteras de Estados Unidos y
-                    Europa nos permiten estar en la vanguardia del sector y
-                    ofrecer las soluciones mas avanzadas a cada proyecto.
-                  </p>
-                  <p>
-                    Nuestros sistemas constructivos, nuevos materiales, nuevos
-                    procesos de edificacion...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header accorHeader">
-                <button
-                  class="accordion-button collapsed text-white fw-bolder"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Salud y Confort
-                </button>
-              </h4>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-              >
-                <div class="accordion-body fw-lighter fs-5">
-                  <p>
-                    Analizamos los factores ambientales, exteriores e interiores
-                    que influyen en su salud y confort.
-                  </p>
-                  <p>
-                    Podemos generar atmosferas interiores mas saludables y
-                    confortables, la sensacion termica y la regulacion de
-                    humedad de nuestras casas son fundamentales en ese aspecto.
-                  </p>
-                  <p>
-                    Tambien podemos realizar diseños armonicos, asi como
-                    estudiar las radiaciones electromagneticas, las posibles
-                    geopatias y las eventuales fuentes de contaminacion quimica
-                    que pudieran afectarle.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
+            <button
+              class="nav-link active w-100 text-white fw-bolder"
+              id="pills-ubicacion-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-ubicacion"
+              type="button"
+              role="tab"
+              aria-controls="pills-ubicacion"
+              aria-selected="true"
+            >
+              <a>Ubication</a>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link w-100 text-white fw-bolder border-bottom border-black"
+              id="pills-metodo-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-metodo"
+              type="button"
+              role="tab"
+              aria-controls="pills-metodo"
+              aria-selected="false"
+            >
+              Method
+            </button>
+          </li>
+          <li
+            class="nav-item border-bottom border-black"
+            role="presentation"
+          >
+            <button
+              class="nav-link w-100 fw-bolder text-white"
+              id="pills-eficiencia-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-eficiencia"
+              type="button"
+              role="tab"
+              aria-controls="pills-eficiencia"
+              aria-selected="false"
+            >
+             Efficiency
+            </button>
+          </li>
+          <li
+            class="nav-item border-bottom border-black"
+            role="presentation"
+          >
+            <button
+              class="nav-link w-100 fw-bolder text-white"
+              id="pills-passivhaus-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-passivhaus"
+              type="button"
+              role="tab"
+              aria-controls="pills-passivhaus"
+              aria-selected="false"
+            >
+              Ending
+            </button>
+          </li>
+          <li
+            class="nav-item border-bottom border-black"
+            role="presentation"
+          > 
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content contenidoPestanas mt-3" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active text-start descripcionPestanas"
+          id="pills-ubicacion"
+          role="tabpanel"
+          aria-labelledby="pills-ubicacion-tab"
+          tabindex="0"
+        >
+          <h3>Where we come from</h3>
+          <iframe
+            class="mapa w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.5089598972672!2d-80.00635488432334!3d36.10545631419566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885303ff44c9e52b%3A0x5b104004b677c5f1!2s9058%20W%20Market%20St%2C%20Colfax%2C%20NC%2027235!5e0!3m2!1ses-419!2sus!4v1673452103511!5m2!1ses-419!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            alt="Mapa de situación"
+          >
+          </iframe>
+          <p class="">
+            Nuestra sede se encuentra en Colfax, Carolina del Norte (EE.UU).
+            Si nien nuestro ambito de trabajo se extiende a todo Carolina
+            del Norte, y al extranjero en actuaciones concretas.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade text-start"
+          id="pills-metodo"
+          role="tabpanel"
+          aria-labelledby="pills-metodo-tab"
+          tabindex="0"
+        >
+          <h3>When do we start</h3>
+          <p>
+            La flexibilidad es la caracteristica principal de nuestro metodo
+            de trabajo. Podemos intervenir en cualquier fase del proceso
+            constructivo, desde la concepción hasta la ejecución llave en
+            mano, aportando valor añadido en cada una de ellas.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade text-start"
+          id="pills-eficiencia"
+          role="tabpanel"
+          aria-labelledby="pills-eficiencia-tab"
+          tabindex="0"
+        >
+          <h3>What do we start doing</h3>
+          <p>
+            Los pilares de nuestra actividad son el conocimiento, la
+            experiencia, la implicacion en cada uno de los proyectos y el
+            compromiso en optimizar la solucion mas adecuada a cada cliente.
+          </p>
+          <p>
+            La eficiencia de nuestros procesos y la experiencia acumulada
+            nos permite controlar plazos y costes para ofrecer fiabilidad
+            total en nuestras actuaciones.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade text-start"
+          id="pills-passivhaus"
+          role="tabpanel"
+          aria-labelledby="pills-passivhaus-tab"
+          tabindex="0"
+        >
+          <h3>What do we do now</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            saepe similique nemo a et aliquid necessitatibus enim
+            dignissimos ipsum non, vitae explicabo, commodi laboriosam ut
+            repellat possimus obcaecati numquam porro? item
+          </p>
+        </div>
+        <div
+          class="tab-pane fade text-start"
+          id="pills-offerServices"
+          role="tabpanel"
+          aria-labelledby="pills-passivhaus-tab"
+          tabindex="0"
+        >
+          <h3>Offer services</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            saepe similique nemo a et aliquid necessitatibus enim
+            dignissimos ipsum non, vitae explicabo, commodi laboriosam ut
+            repellat possimus obcaecati numquam porro? item
+          </p>
+        </div>
+      </div>
+    </div>
+      </article>
+    </section>
       <!--Marcas-->
       <section class="my-5">
         <div class="container-fluid patrocinadores contenidoPestanas mt-5">
