@@ -57,6 +57,7 @@
   z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 
+
 /*Fuentes de navbar */
 .navbarPropio a {
   font-family: 'monserrat', sans-serif;
