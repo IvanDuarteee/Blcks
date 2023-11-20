@@ -25,6 +25,15 @@
 
 /*Loader*/
 
+/* First Header */
+
+#top-header {
+  background-color: #da1212;
+  height: 15vh;
+  width: 100%;
+  z-index: 1001;
+}
+
 /*Header*/
 
 /*Background navbar */
