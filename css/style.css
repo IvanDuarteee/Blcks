@@ -35,7 +35,10 @@
 }
 
 /*Header*/
-
+/*Header 1*/
+.header1 a:hover {
+  background-color: #121212;
+}
 /*Background navbar */
 
 .navbarPropio {
@@ -259,7 +262,7 @@
 
 @media (max-width: 769px) {
   .contenedorMainIndex {
-    margin-top: 142px;
+    margin-top: 142px !important;
   }
   /*NavbarPropio*/
   .navbarPropio img {

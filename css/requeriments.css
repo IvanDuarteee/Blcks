@@ -140,3 +140,10 @@
   .avisosLegales {
     text-align: justify;
   }
+
+
+  /*Error 404*/
+
+  .contenedorError {
+    margin-top: 70px;
+  }
