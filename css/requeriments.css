@@ -147,3 +147,26 @@
   .contenedorError {
     margin-top: 70px;
   }
+
+  /*Turkey services*/
+
+  /*Projects - Residential and comercial */
+
+  .descripProject p {
+    text-align: justify;
+  }
+
+
+  @media (max-width:575px) {
+    .formProject input {
+      margin-top: 10px;
+
+    }
+  }
+
+  /*Products*/
+
+  .contenedoresProd {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  } 
