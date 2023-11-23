@@ -60,7 +60,7 @@
                   <a class="nav-link text-danger" aria-current="page" href="./pages/contact-us.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-danger" aria-current="page" href="#">About Us</a>
+                  <a class="nav-link text-danger" aria-current="page" href="#aboutUs">About Us</a>
                 </li>
 
               </div>
@@ -119,6 +119,13 @@
                         <li>
                           <a
                             class="dropdown-item"
+                            href="./pages/products.html"
+                            >Products</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
                             href="/pages/carrers/online-employment-application.html"
                             >Employee Aplication</a
                           >
@@ -163,6 +170,13 @@
                         <li>
                           <a
                             class="dropdown-item"
+                            href="./pages/projects.html"
+                            >Project Home</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
                             href="/pages/projects-residential.html"
                             >Residential</a
                           >
@@ -176,14 +190,6 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        aria-current="page"
-                        href="/pages/contact-us.html"
-                        >Contact us</a
-                      >
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -194,7 +200,7 @@
       </section>
     </header>
     <!--Main-->
-    <main class="contenedorMainIndex">
+    <main >
       <!--Carousel-->
       <section>
         <div class="carousel2">
@@ -315,7 +321,7 @@
         </div>
         <!-- About Us -->
         <article class="quienesSomos my-4">
-          <div class="container-fluid aparecer">
+          <div id="aboutUs" class="container-fluid aparecer">
             <div class="container d-flex flex-column flex-md-row justify-content-between col">
               <div class="col-md-4">
                 <h2>¿Quienes Somos?</h2>
@@ -336,7 +342,7 @@
       <!--Pestañas-->
       <section
       id="pestanas"
-      class="container d-flex flex-column justify-content-center mt-4">
+      class="container d-flex flex-column justify-content-center mt-4 p">
         <div class="card text-center cardAboutUs">
           <!-- Titulo de Botones -->
           <div class="card-header">
@@ -351,7 +357,7 @@
                 role="presentation"
               >
                 <button
-                  class="nav-link active w-100 text-white fw-bolder"
+                  class="nav-link active w-100 text-white fw-bolder mt-3"
                   id="pills-ubicacion-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-ubicacion"
@@ -417,7 +423,7 @@
             </ul>
           </div>
           <!-- Descripcion de botones -->
-          <div class="tab-content contenidoPestanas mt-3" id="pills-tabContent">
+          <div class="tab-content contenidoPestanas mt-2" id="pills-tabContent">
             <!-- Ubication -->
             <div
               class="tab-pane fade show active text-start descripcionPestanas"
@@ -647,7 +653,7 @@
               </p>
             </div>
             <a
-              href="mailto:b.stone.nc@gmail.com?subject=Candidatura%20Tecnico%20Blackstone%20NC"
+              href="./pages/carrers/online-employment-application.html"
               target="_blank"
               ><button
                 type="button"
@@ -681,9 +687,9 @@
             <p class="linksFooter">
               |<a href="./index.html">Home</a>|
               <a href="/pages/carrers/subcontractor-&-supplier-diversity.html">Supplier Diversity</a>|
-              <a href="">Projects</a>|
+              <a href="./pages/products.html">Products</a>|
               <a href="./pages/avisoLegal.html" target="_blank">Aviso legal</a>|
-              <a href="./pages/projects.html">Contact Us</a>|
+              <a href="./pages/projects.html">Projects</a>|
             </p>
           </div>
           <div
@@ -695,7 +701,7 @@
                 width="35"
                 height="35"
                 fill="currentColor"
-                class="bi bi-facebook text-white mx-3"
+                class="bi bi-facebook text-white mx-3 social-icon"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -709,7 +715,7 @@
                 width="35"
                 height="35"
                 fill="currentColor"
-                class="bi bi-instagram text-white mx-3"
+                class="bi bi-instagram text-white mx-3 social-icon"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -723,7 +729,7 @@
                 width="35"
                 height="35"
                 fill="currentColor"
-                class="bi bi-envelope-at-fill text-white mx-3"
+                class="bi bi-envelope-at-fill text-white mx-3 social-icon"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -742,7 +748,7 @@
                 width="35"
                 height="35"
                 fill="currentColor"
-                class="bi bi-whatsapp text-white mx-3"
+                class="bi bi-whatsapp text-white mx-3 social-icon"
                 viewBox="0 0 20 20"
               >
                 <path

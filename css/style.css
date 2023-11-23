@@ -50,6 +50,11 @@
   background-color: #121212;
 }
 
+/*Iconos header1*/
+.bi:hover {
+  color: black; /* Change this to the desired color on hover */
+  cursor: pointer; /* Optional: Change cursor to pointer on hover */
+}
 
 .navbarPropio {
   position: fixed !important;
@@ -79,6 +84,16 @@
 
 
 /*Fuentes de navbar */
+.navbar-nav a:hover {
+  color: #da1212; /* Cambiar el color al hacer hover */
+}
+
+.navbar-nav a:focus,
+.navbar-nav a:active {
+    outline: none; /* Elimina el contorno de foco predeterminado */
+    background-color: transparent; /* Establece el fondo en transparente al seleccionar */
+}
+
 .navbarPropio a {
   font-family: 'monserrat', sans-serif;
   font-size: 20px;
@@ -92,10 +107,6 @@
 }
 
 /*Carousel*/
-
-.contenedorMainIndex {
-
-}
 
 
 .carousel2 {
@@ -153,7 +164,7 @@
 }
 
 .quienesSomos p {
-  font-weight: lighter;
+  font-weight: normal;
   text-align: justify;
   font-size: 20px;
   color: black;
@@ -177,7 +188,6 @@
 }
 
 .botonesPestanas button {
-  margin: 4px;
   font-weight: bolder;
   color: white;
   background-color: #da1212;
@@ -407,4 +417,8 @@ footer li:not(:last-child):after {
 .transition-fade-in {
   opacity: 0;
   transition: opacity 3s ease-in-out;
+}
+
+.social-icon:hover {
+  fill: #da1212;
 }
