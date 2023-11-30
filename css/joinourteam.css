@@ -1,8 +1,17 @@
 .container-fluid.joinOurTeam {
-    background-color: red;
     width: 75%;
 }
 
 .nav-pills li a:hover {
     background-color: #da1212;
+}
+
+.careers {
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+}
+
+.careers.joinOurTalent {
+    fill: #da1212;
 }

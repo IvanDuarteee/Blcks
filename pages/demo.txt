@@ -28,3 +28,22 @@
       </div>
 
       <script src="./js/precarga.js"></script>
+
+
+<!-- Dropdown -->
+<div class="dropdown open p-3">
+    <button
+      class="btn border-none dropdown-toggle text-white"
+      type="button"
+      id="triggerId"
+      data-bs-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <i class="fa fa-user"></i><span class="ms-2">Yousaf</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+      <button class="dropdown-item" href="#">Setting</button>
+      <button class="dropdown-item" href="#">Profile</button>
+    </div>
+</div>
