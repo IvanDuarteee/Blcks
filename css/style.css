@@ -52,9 +52,10 @@
 }
 
 /*Iconos header1*/
-.bi:hover {
-  color: black; /* Change this to the desired color on hover */
-  cursor: pointer; /* Optional: Change cursor to pointer on hover */
+.iconosHeader1:hover svg {
+  background-color: none !important;
+  fill: White;
+  transition: all 0.5s;
 }
 
 .navbarPropio {
@@ -200,9 +201,10 @@
   color: white; /* Cambia el color del texto si es necesario */
 }
 
+
 .contenidoPestanas {
-  padding: 50px 0;
-  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contenidoPestanas h3 {
@@ -211,13 +213,11 @@
   border-color: #d04143;
 }
 
+.contenidoPestanas p {
+  text-align: justify;
+}
 .mapa {
   border-color: #da1212;
-}
-
-.descripcionPestanas p{
-  font-size: 20px;
-  font-weight: lighter;
 }
 
 .card-header {
@@ -272,8 +272,16 @@
 /*XS-Screen*/
 
 @media (max-width: 769px) {
+
+  .header1 a {
+
+    font-size: 12px !important;
+
+  }
+
+  
   .contenedorMainIndex {
-    margin-top: 142px !important;
+    margin-top: 130px !important;
   }
   /*NavbarPropio*/
   .navbarPropio img {
@@ -340,6 +348,15 @@
  
 }
 
+@media (min-width:770px) and (max-width:991px) {
+
+  .header1 a {
+
+    font-size: 13px !important;
+
+  }
+
+}
 /*Screen M */
 @media (min-width: 992px) {
   .carousel2 img {
