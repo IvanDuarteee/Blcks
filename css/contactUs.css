@@ -29,9 +29,9 @@
 }
 
 
-.contenedorMain {
+main {
     width: 100%;
-    margin-top: 130px;
+    margin-top: 133px;
   }
 
 /*Formulario y contacto*/
@@ -59,14 +59,17 @@
 }
 
 
-
-
+@media (max-width:434px) {
+  main {
+    margin-top: 150px !important;
+  }
+}
 
 
 @media (max-width: 767px){
 
-    .contenedorMain {
-        margin-top: 140px;
+    main {
+      margin-top: 134px;
     }
     
     .franjaContact {
@@ -102,13 +105,42 @@
 }  
 @media (width:768px)  {
   main {
-    margin-top: 95px !important;
+    margin-top: 96px !important;
+  }
+
+}
+
+@media (min-width:769px) and (max-width:990px) {
+  main {
+    margin-top: 125px
+  }
+}
+
+@media (min-width:991px) and (max-width:1056px) {
+
+  main {
+    margin-top: 127px;
+  }
+
+  .header1 a {
+    font-size: 14px;
+  }
+
+
+  .mapaContact {
+    height: 500px;
   }
 
 }
 
 
-@media (min-width: 991px) {
+@media (min-width: 1057px) {
+
+  .contenedorMain {
+    margin-top: 135px;
+  }
+
+
   .mapaContact {
     height: 500px;
   }

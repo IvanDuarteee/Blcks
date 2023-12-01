@@ -263,6 +263,7 @@
 /*Media queries*/
 /*Sm screen*/
 @media (max-width: 405px) {
+
   .botonesPestanas button {
     font-size: 10px !important;
     padding: 9px !important;
@@ -352,7 +353,7 @@
 
   .header1 a {
 
-    font-size: 13px !important;
+    font-size: 12px !important;
 
   }
 
