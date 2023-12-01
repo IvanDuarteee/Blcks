@@ -60,8 +60,9 @@ main {
 
 
 @media (max-width:434px) {
+  
   main {
-    margin-top: 150px !important;
+    margin-top: 124px !important;
   }
 }
 

@@ -262,17 +262,40 @@
 
 /*Media queries*/
 /*Sm screen*/
-@media (max-width: 405px) {
+@media (max-width: 435px) {
+
+  .header1 a {
+
+    font-size: 9px !important;
+
+  }
 
   .botonesPestanas button {
     font-size: 10px !important;
     padding: 9px !important;
   }
+
+  .contenedorMainIndex {
+    margin-top: 123px !important;
+  }
+  /*NavbarPropio*/
+  .navbarPropio img {
+    height: 40px !important;
+  }
+
+  .navbarPropio a {
+    font-size: 15px;
+  }
+
+  .quienesSomos p {
+    font-size: 19px;
+    text-align: justify;
+  }
 }
 
 /*XS-Screen*/
 
-@media (max-width: 769px) {
+@media (min-width:436px) and (max-width: 769px) {
 
   .header1 a {
 
